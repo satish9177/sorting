@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sort visualisation</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="head"> <h1>visualisation algorithms</h1> 
+    </div>
+      <div class="range">
+        <div class="size">
+          <label for="range">speed</label>:
+     <input type="range" id="speed" min="0" max="1000" step="20" oninput="t()" > 
+     <span id="pt"></span>   
+     </div>                  
+     <div class="size">      
+     <label for="range">Arraysize</label>:
+    <input type="range" id="size" min="0" max="50" value="20"  oninput="t()"> <span id="ptt"></span>  
+  </div>
+  </div>
+ 
+    <div  class="alg" >
+    <div  ><button onclick="bs()">bubble sort</button></div>
+    <div  ><button onclick="mergesort()" >merge sort</button></div>
+    <div  ><button onclick="selectionsort()">Selection sort</button></div>
+    <div  ><button onclick="insertionsort()">Insertion sort</button></div>
+    <div ><button onclick="qs()" >Quick sort</button></div></div>
+    <div class="alg"><button onclick="reset()">Reset</button></div>
+    <div class="met"></div>
+    
+  <script src="script.js"></script>
+ </body>
+ </html>
